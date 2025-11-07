@@ -5,21 +5,21 @@ export const FACEBOOK_URL = "https://www.facebook.com/profile.php?id=61583161845
 
 export const WHATSAPP_MESSAGE = (productName: string) => encodeURIComponent(`Hi, I want to order the ${productName} from Protech Store. Please send details and the surprise price.`);
 
-export const LOGO_URL = "https://i.ibb.co/Q8bBqf9/Whats-App-Image-2024-08-16-at-8-37-33-PM.jpg";
-export const HERO_PRODUCTS_URL = "https://i.ibb.co/1nCxNqL/panner.jpg";
+export const LOGO_URL = "https://i.postimg.cc/zXG6zgpM/logo.jpg";
+export const HERO_PRODUCTS_URL = "https://i.postimg.cc/3JgGqVwW/panner.jpg";
 
 export const PRODUCTS_DATA = [
   {
     id: "pen",
-    img: "https://i.ibb.co/51N6hVd/pen-cam.jpg",
+    img: "https://i.postimg.cc/kX8SSY7P/pen-cam.jpg",
   },
   {
     id: "charger",
-    img: "https://i.ibb.co/L5r6c1G/charger-cam.jpg",
+    img: "https://i.postimg.cc/13Y24f99/charger-cam.jpg",
   },
   {
     id: "mini",
-    img: "https://i.ibb.co/hKsyTfv/mini-cam.jpg",
+    img: "https://i.postimg.cc/x8P4wFjT/mini-cam.jpg",
   },
 ];
 
