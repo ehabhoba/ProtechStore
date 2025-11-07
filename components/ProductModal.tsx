@@ -21,6 +21,10 @@ const ProductModal: React.FC<ProductModalProps> = ({ product, onClose, t, lang }
       window.removeEventListener('keydown', handleEsc);
     };
   }, [onClose]);
+  
+  const name = t(`products.${product.id}.name`);
+  const short = t(`products.${product.id}.short`);
+  const bullets = t(`products.${product.id}.bullets`) as unknown as string[];
 
   return (
     <div 
@@ -41,14 +45,14 @@ const ProductModal: React.FC<ProductModalProps> = ({ product, onClose, t, lang }
         </div>
         <div className="flex flex-col sm:flex-row items-start gap-6">
           <div className="w-full sm:w-48 h-48 flex-shrink-0 bg-gray-100 rounded-lg flex items-center justify-center p-2">
-            <img src={product.img} alt={product.name} className="w-full h-full object-contain" />
+            <img src={product.img} alt={name} className="w-full h-full object-contain" />
           </div>
           <div className="text-start">
-            <h4 className="text-2xl font-bold text-gray-800">{product.name}</h4>
-            <p className="text-gray-600 mt-1">{product.short}</p>
+            <h4 className="text-2xl font-bold text-gray-800">{name}</h4>
+            <p className="text-gray-600 mt-1">{short}</p>
 
             <ul className="mt-4 space-y-2">
-              {product.bullets.map((b, i) => (
+              {Array.isArray(bullets) && bullets.map((b, i) => (
                 <li key={i} className="flex items-center gap-2 text-gray-700">
                   <span className="text-blue-500">&#10003;</span>
                   {b}
@@ -58,7 +62,7 @@ const ProductModal: React.FC<ProductModalProps> = ({ product, onClose, t, lang }
 
             <div className="mt-6 flex flex-col sm:flex-row gap-3">
               <a 
-                href={`https://wa.me/${WHATSAPP_NUMBER.replace(/\+/g, "")}?text=${WHATSAPP_MESSAGE(product.name)}`} 
+                href={`https://wa.me/${WHATSAPP_NUMBER.replace(/\+/g, "")}?text=${WHATSAPP_MESSAGE(name, lang)}`} 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-green-500 hover:bg-green-600 text-white px-5 py-3 rounded-lg font-semibold text-center transition-colors"

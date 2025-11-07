@@ -1,66 +1,43 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <!-- Fonts & Tailwind Config -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              sans: ['Inter', 'sans-serif'],
-              cairo: ['Cairo', 'sans-serif'],
-            },
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Protech Store</title>
+  <meta name="description" content="Protech Store — Smart Devices & Gadgets. Order via WhatsApp." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            cairo: ['Cairo', 'sans-serif'],
           },
         },
-      }
-    </script>
-    
-    <!-- SEO Meta Tags -->
-    <title>متجر بروتك — أجهزة ذكية وأدوات</title>
-    <meta name="description" content="متجر بروتك — أحدث الأجهزة الذكية: أقلام كاميرا، شواحن بكاميرا، وكاميرات محمولة. اطلب الآن عبر WhatsApp مع سعر مفاجأة وعروض حصرية." />
-    <meta name="keywords" content="Protech, smart devices, spy pen, usb charger camera, mini camera, Full HD, كاميرا قلم, شاحن كاميرا" />
-    <meta property="og:title" content="Protech Store — Smart Devices" />
-    <meta property="og:description" content="اكتشف مجموعة Protech Store: أجهزة ذكية بتصميم أنيق وجودة عالية. اطلب الآن عبر WhatsApp." />
-    <meta property="og:image" content="https://i.postimg.cc/3JgGqVwW/panner.jpg" />
-    <meta property="og:type" content="website" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <link rel="canonical" href="https://protechstore.example.com" />
-    
-    <!-- Structured Data -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Store",
-        "name": "Protech Store",
-        "url": "https://protechstore.example.com",
-        "logo": "https://i.postimg.cc/zXG6zgpM/logo.jpg",
-        "description": "متجر Protech للأجهزة الذكية — أقلام بكاميرا، شواحن بكاميرا وكاميرات محمولة. اطلب عبر WhatsApp بسعر مفاجأة.",
-        "sameAs": [
-          "https://www.facebook.com/profile.php?id=61583161845820"
-        ]
-      }
-    </script>
-    
+      },
+    }
+  </script>
   <script type="importmap">
-{
-  "imports": {
-    "react": "https://aistudiocdn.com/react@^19.2.0",
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
-    "react/": "https://aistudiocdn.com/react@^19.2.0/"
-  }
-}
-</script>
+    {
+      "imports": {
+        "react": "https://aistudiocdn.com/react@^19.2.0",
+        "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+        "react/": "https://aistudiocdn.com/react@^19.2.0/"
+      }
+    }
+  </script>
+  <style>
+    :lang(ar) { font-family: 'Cairo', sans-serif; }
+    :lang(en) { font-family: 'Inter', sans-serif; }
+  </style>
 </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <script type="module" src="/index.tsx"></script>
-  </body>
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
 </html>

@@ -1,0 +1,20 @@
+[
+  {
+    "id": "ORD001",
+    "customerName": "Ahmed Hassan",
+    "product": "Smart Pen Camera",
+    "date": "2024-07-28"
+  },
+  {
+    "id": "ORD002",
+    "customerName": "Fatima Ali",
+    "product": "USB Charger Camera",
+    "date": "2024-07-27"
+  },
+  {
+    "id": "ORD003",
+    "customerName": "Youssef Ibrahim",
+    "product": "Mini Portable Camera",
+    "date": "2024-07-27"
+  }
+]
